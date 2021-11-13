@@ -50,6 +50,7 @@ const FaqSection = () => {
             animi?
           </p>
         </div>
+        <div className='faq-line'></div>
       </div>
       <div className='question'>
         <h4>What Product do you offer?</h4>
