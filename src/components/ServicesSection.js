@@ -6,10 +6,14 @@ import money from '../img/money.svg'
 import teamwork from '../img/teamwork.svg'
 import home2 from '../img/home2.png'
 import styled from 'styled-components'
+import { scrollReveal } from '../animation'
+
+import { UseScroll } from './useScroll'
 
 const ServicesSection = () => {
+  const [element, controls] = UseScroll()
   return (
-    <Services>
+    <Services variants={scrollReveal} animate={controls} ref={element}>
       <Description>
         <h2>
           High <span>Quality</span> services
